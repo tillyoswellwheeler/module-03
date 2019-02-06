@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb  6 10:54:04 2019
+
+@author: matildaoswell-wheeler
+"""
+
+#------------------------------------------------
+## MODULE 03 -- Chapter Nine -- Project Structure
+#------------------------------------------------
+
+#-----------------------------------------
+## Phonebook -- Storycards -- MoSoCo
+#-----------------------------------------
+
+# Mo - Must have
+# So - Should have
+# Co - Could have
+
+1.1 Find a Business 
+    In order to be able to find a business, (must)
+    As a web user,
+    I want to be able to search by Business type or by Business Name (must)
+        AND be able to provide a location to narrow down the search. (could)
+
+    1.1.1 Scenario: Search by Business type
+        Given I navigate to "Find a Business by type or name" (must)
+        AND I see search by Business Type by default (must)
+        When I specify Business Type and Location (could)
+        Then I can view 50 search results And view related Search results. (could)
+    
+    1.1.2 Scenario: Search by Business name
+        Given I navigate to "Find a Business by type or name" (must)
+        And I click on "Business name" (must)
+        When I search by Business name and Location (could)
+        Then I can view 50 search results And view related Search results. (could)
+    
+1.2 Find a Person
+    In order to be able to find a person,
+    As a web user,
+    I want to be able to search for a person (must)
+    AND be able to provide a location to narrow down the search. (could)
+    
+    1.2.1 Scenario: Search Person
+        Given I navigate to “Find a Person”
+        When I search by Surname and Location (should)
+        Then I can view 50 search results And view related Search results. (could)
+    
+1.3 Sorted results (Distance, Name)
+    In order to be able to View Search results in a sorted order (could)
+    As a web user,
+    I want to be able to select and view the search results in either Alphabetic order (must)
+        OR sorted by distance from search location. (could)
+    
+    1.3.1 Scenario: Sort by Distance/Default option
+        Given I navigate to "Find a Business by type or name"
+        When perform a search by Business by Type (must)
+        Then I can view 50 search results (could)
+            AND by default, I can view the search results in order of distance from the given location. (could)
+            
+    1.3.2 Scenario: Sort Alphabetically
+        Given I navigate to "Find a Business by type or name" (must)
+        When perform a search by Business by Type And I click on the Name “(A-Z)” (should)
+        Then I can view 50 search results (could)
+            AND by default, I can view the search results in alphabetical order. (could)
+    
+    
